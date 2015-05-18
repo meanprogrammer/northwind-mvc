@@ -9,11 +9,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Mvc.Data.Reposito
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Mvc.Web", "Northwind.Mvc.Web\Northwind.Mvc.Web.csproj", "{2DE26D96-E571-4C95-8305-74A8D38574C0}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DB", "DB", "{3450CBF2-E5C6-4CC9-AB6F-9DC1089DD0C4}"
-	ProjectSection(SolutionItems) = preProject
-		..\..\..\..\..\Program Files (x86)\Microsoft SQL Server\MSSQL11.SQL2012\MSSQL\Backup\northwind.bak = ..\..\..\..\..\Program Files (x86)\Microsoft SQL Server\MSSQL11.SQL2012\MSSQL\Backup\northwind.bak
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
