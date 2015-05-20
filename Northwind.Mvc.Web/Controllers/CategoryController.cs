@@ -1,4 +1,5 @@
-﻿using Northwind.Mvc.Data.Repository;
+﻿using Northwind.Mvc.Data.Models;
+using Northwind.Mvc.Data.Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -33,14 +34,14 @@ namespace Northwind.Mvc.Web.Controllers
 
         public ActionResult Create()
         {
-            return View();
+            return PartialView("_Create");
         }
 
         //
         // POST: /Category/Create
 
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        public ActionResult Create(Category collection)
         {
             try
             {
@@ -52,6 +53,7 @@ namespace Northwind.Mvc.Web.Controllers
             {
                 return View();
             }
+            return PartialView("_Create");
         }
 
         //

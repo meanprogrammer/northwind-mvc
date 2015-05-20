@@ -238,6 +238,7 @@
     <Content Include="Views\Category\Index.cshtml" />
     <Content Include="Views\Index\Index.cshtml" />
     <Content Include="Views\Shared\Nav.cshtml" />
+    <Content Include="Views\Category\_Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
