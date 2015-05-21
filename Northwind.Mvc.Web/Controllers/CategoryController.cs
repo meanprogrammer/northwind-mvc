@@ -41,12 +41,11 @@ namespace Northwind.Mvc.Web.Controllers
         // POST: /Category/Create
 
         [HttpPost]
-        public ActionResult Create(Category collection)
+        public ActionResult Create(Category entity)
         {
             try
             {
-                // TODO: Add insert logic here
-
+                repo.InsertOnSubmit(entity);
                 return RedirectToAction("Index");
             }
             catch

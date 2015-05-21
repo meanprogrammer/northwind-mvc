@@ -31,7 +31,11 @@ namespace Northwind.Mvc.Data.Repository
 
         public void InsertOnSubmit(Category entity)
         {
-            throw new NotImplementedException();
+            using (northwindEntities ne = new northwindEntities())
+            {
+                ne.Categories.Add(entity);
+                ne.SaveChanges();
+            }
         }
 
         public void DeleteOnSubmit(Category entity)
