@@ -53,6 +53,7 @@
     <Compile Include="Category.cs">
       <DependentUpon>NorthwindModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="CategoryMeta.cs" />
     <Compile Include="Category_Sales_for_1997.cs">
       <DependentUpon>NorthwindModel.tt</DependentUpon>
     </Compile>

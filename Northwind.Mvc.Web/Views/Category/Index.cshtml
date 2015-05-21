@@ -8,13 +8,16 @@
 <h2>Index</h2>
 
 <p>
-    @Html.ActionLink("Create", "Create", "Category", null, new { data_toggle="#modal-container", data_target="modal", id="btnCreate", @class = "btn btn-md btn-info modal-link" })
+    @Html.ActionLink("Create", "Create", "Category", null, new { data_toggle="modal", data_target="#modal-container", id="btnCreate", @class = "btn btn-md btn-info modal-link" })
 </p>
 
 <div id="modal-container" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
         <div class="modal-content">
         </div>
     </div>
+</div>
+
 
 <table class="table table-striped table-bordered">
     <tr>
