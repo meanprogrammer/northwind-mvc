@@ -7,8 +7,7 @@
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/modernizr")
-    @Styles.Render("~/Content/css", "~/Content/themes/base/css",  "~/Content/bootstrap")
-    @Scripts.Render("~/bundles/jquery", "~/bundles/jqueryui",  "~/bundles/bootstrap")
+  
 </head>
 <body>
     <div class="container-fluid">
@@ -24,7 +23,16 @@
         </div>
         @RenderBody()
     </div>
-    @Scripts.Render("~/bundles/jquery")
+    @Styles.Render("~/Content/themes/base/css",  "~/Content/bootstrap")
+    @Scripts.Render("~/bundles/jqueryui",  "~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
 </body>
 </html>
+<script>
+    
+    $('body').on('click', '.modal-link', function (e) {
+        e.preventDefault();
+        $(this).attr('data-target', '#modal-container');
+        $(this).attr('data-toggle', 'modal');
+    });
+</script>

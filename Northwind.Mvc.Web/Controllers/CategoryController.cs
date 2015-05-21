@@ -34,7 +34,7 @@ namespace Northwind.Mvc.Web.Controllers
 
         public ActionResult Create()
         {
-            return PartialView("_Create");
+            return PartialView("_Create", new Category());
         }
 
         //
