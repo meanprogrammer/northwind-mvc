@@ -10,7 +10,7 @@ namespace Northwind.Mvc.Data.Models
     [MetadataType(typeof(CategoryMeta))]
     public partial class Category
     { 
-
+        //this is just a test
     }
 
     public class CategoryMeta
